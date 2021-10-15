@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{def8439e-f44a-4a7a-85e5-6c6cf94a1db1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tc_id" select="1" icon="1" preview="1">
+        <row name="result" id="tc_assessmentplanid">
+          <cell name="tc_id" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tc_assessmentplan">
+          <attribute name="tc_assessmentplanid" />
+          <attribute name="tc_id" />
+          <attribute name="createdon" />
+          <order attribute="tc_id" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Assessment Plans" languagecode="1033" />
+      <LocalizedName description="Plans d'évaluation inactifs" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

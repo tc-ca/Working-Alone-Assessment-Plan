@@ -1,0 +1,11 @@
+<environmentvariabledefinition schemaname="tc_PowerPlatformEnvironment">
+  <defaultvalue>852b54e5-f76e-4f15-8f52-eb797e128886</defaultvalue>
+  <displayname default="Power Platform Environment">
+    <label description="Power Platform Environment" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tc_meansofcommunications" localizedName="Means of Communications" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Means of Communications" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="100000000">
+      <labels>
+        <label description="Cell Phone" languagecode="1033" />
+        <label description="Cellulaire" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000001">
+      <labels>
+        <label description="Personals Alarm System" languagecode="1033" />
+        <label description="Système d'alarme personnelle" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000002">
+      <labels>
+        <label description="Emergency Call Button" languagecode="1033" />
+        <label description="Bouton d'appel d'urgence" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000003">
+      <labels>
+        <label description="Radio" languagecode="1033" />
+        <label description="Radio" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000004">
+      <labels>
+        <label description="Telephone Line" languagecode="1033" />
+        <label description="Ligne téléphonique" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000005">
+      <labels>
+        <label description="Satellite Phone" languagecode="1033" />
+        <label description="Téléphone sattelitaire" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000006">
+      <labels>
+        <label description="Other" languagecode="1033" />
+        <label description="Autre" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>

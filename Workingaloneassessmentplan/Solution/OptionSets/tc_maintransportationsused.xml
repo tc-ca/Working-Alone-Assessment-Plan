@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tc_maintransportationsused" localizedName="Main Transportations Used" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Main Transportations Used" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="100000000">
+      <labels>
+        <label description="Road Vehicle" languagecode="1033" />
+        <label description="Véhicule routier" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000001">
+      <labels>
+        <label description="Rail Vehicle" languagecode="1033" />
+        <label description="Vehicule ferroviaire" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000002">
+      <labels>
+        <label description="Marine Vessel" languagecode="1033" />
+        <label description="Vaisseau" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000003">
+      <labels>
+        <label description="Aircfaft" languagecode="1033" />
+        <label description="Aéronef" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000004">
+      <labels>
+        <label description="ATV" languagecode="1033" />
+        <label description="VTT" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000005">
+      <labels>
+        <label description="Snowmobile" languagecode="1033" />
+        <label description="Motoneige" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000006">
+      <labels>
+        <label description="Other" languagecode="1033" />
+        <label description="Autre" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tc_workingalonefrequencies" localizedName="Working Alone Frequencies" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Working Alone Frequencies" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="100000000">
+      <labels>
+        <label description="5 days/week" languagecode="1033" />
+        <label description="5 jours/semaine" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000001">
+      <labels>
+        <label description="4 days/week" languagecode="1033" />
+        <label description="4 jours/semaine" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000002">
+      <labels>
+        <label description="3 days/week" languagecode="1033" />
+        <label description="3 jours/semaine" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000003">
+      <labels>
+        <label description="2 days/week" languagecode="1033" />
+        <label description="2 jours/semaine" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000004">
+      <labels>
+        <label description="1 day/week" languagecode="1033" />
+        <label description="1 jour/semaine" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tc_workingalonetypes" localizedName="Working Alone Types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Working Alone Types" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="100000000">
+      <labels>
+        <label description="Remote Location" languagecode="1033" />
+        <label description="Région isolée" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000001">
+      <labels>
+        <label description="Office" languagecode="1033" />
+        <label description="Bureau" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000002">
+      <labels>
+        <label description="Teleworking" languagecode="1033" />
+        <label description="Télétravail" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000003">
+      <labels>
+        <label description="On field" languagecode="1033" />
+        <label description="Sur le terrain" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000004">
+      <labels>
+        <label description="Other" languagecode="1033" />
+        <label description="Autre" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>

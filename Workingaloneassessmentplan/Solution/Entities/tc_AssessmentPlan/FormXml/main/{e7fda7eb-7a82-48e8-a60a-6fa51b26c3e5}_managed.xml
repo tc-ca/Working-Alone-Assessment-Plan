@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e7fda7eb-7a82-48e8-a60a-6fa51b26c3e5}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{5157fdbf-52ae-452e-bf78-92f2510496a4}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c59210a3-b8fe-4518-ac20-bd647d743127}" columns="1111" name="generalTab" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c5d4c51c-f1ad-4512-8e4c-ad778b07de5a}" visible="false">
+                        <labels>
+                          <label description="Id" languagecode="1033" />
+                        </labels>
+                        <control id="tc_id" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tc_id" />
+                      </cell>
+                      <cell id="{27732dfd-377e-46d2-924a-5afd4a577380}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Employee's Position Number" languagecode="1033" />
+                          <label description="Numéro de poste de l'employé" languagecode="1036" />
+                        </labels>
+                        <control id="tc_employeespositionnumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_employeespositionnumber" disabled="false" />
+                      </cell>
+                      <cell id="{7722ae6b-c6a6-4c02-b568-3f4438cfcb8c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Employee's Email" languagecode="1033" />
+                          <label description="Adresse courriel de l'employé" languagecode="1036" />
+                        </labels>
+                        <control id="tc_employeesemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="tc_employeesemail" disabled="false" />
+                      </cell>
+                      <cell id="{cdc832a2-2e1f-4a4b-ae83-e5615d643293}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Region" languagecode="1033" />
+                          <label description="Région" languagecode="1036" />
+                        </labels>
+                        <control id="tc_region" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_region" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{97cb6738-4066-4063-91be-6d352cdb246a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Manager's Family Name" languagecode="1033" />
+                          <label description="Nom de famille du gestionnaire" languagecode="1036" />
+                        </labels>
+                        <control id="tc_managersfamilyname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_managersfamilyname" disabled="false" />
+                      </cell>
+                      <cell id="{647f249d-7234-429c-a83b-40a63927f486}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Work Place Address" languagecode="1033" />
+                          <label description="Adresse du lieu de travail" languagecode="1036" />
+                        </labels>
+                        <control id="tc_workplaceaddress" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_workplaceaddress" disabled="false" />
+                      </cell>
+                      <cell id="{5951644d-a738-4269-a441-8a5e60f6cb8b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Work Description During Working Alone" languagecode="1033" />
+                          <label description="Description des tâches durant le travail seul" languagecode="1036" />
+                        </labels>
+                        <control id="tc_workdescriptionduringworkingalone" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tc_workdescriptionduringworkingalone" disabled="false" />
+                      </cell>
+                      <cell id="{330b3bed-71d8-423c-b71e-9db2e36cd342}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Working Alone Type" languagecode="1033" />
+                          <label description="Type de travail seul" languagecode="1036" />
+                        </labels>
+                        <control id="tc_workingalonetype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_workingalonetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c16f31b-c556-48a6-8fb3-41ef3ed50041}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Province or Territory" languagecode="1033" />
+                          <label description="Provinces &amp; territoires" languagecode="1036" />
+                        </labels>
+                        <control id="tc_provinceorterritory" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_provinceorterritory" disabled="false" />
+                      </cell>
+                      <cell id="{6477c1f9-2f25-4fa0-8495-5ac8ced06811}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Starting Date" languagecode="1033" />
+                          <label description="Date de début" languagecode="1036" />
+                        </labels>
+                        <control id="tc_startingdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tc_startingdate" disabled="false" />
+                      </cell>
+                      <cell id="{ea92f735-1a0a-465d-a784-b99b465bf237}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Working Alone Frequency" languagecode="1033" />
+                          <label description="Fréquence du travail seul" languagecode="1036" />
+                        </labels>
+                        <control id="tc_workingalonefrequency" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_workingalonefrequency" disabled="false" />
+                      </cell>
+                      <cell id="{8b0f3a31-6dd7-4ce1-b151-b1d0d9b2e456}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tasks Preventing Working Alone Verified?" languagecode="1033" />
+                          <label description="Tâches interdisant le travail seul vérifiées?" languagecode="1036" />
+                        </labels>
+                        <control id="tc_taskspreventingworkingaloneverified" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_taskspreventingworkingaloneverified" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6ad9c27-91ca-4a3e-b09e-d710c4e78707}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Alone When Teleworking" languagecode="1033" />
+                          <label description="Seul au télétravail" languagecode="1036" />
+                        </labels>
+                        <control id="tc_alonewhenteleworking" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_alonewhenteleworking" disabled="false" />
+                      </cell>
+                      <cell id="{04c566b9-37a7-4f23-9f0c-1c7cf0fd1426}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Risk Factors and Hazards Identification Done?" languagecode="1033" />
+                          <label description="Identification des dangers et des facteurs de risques complétée?" languagecode="1036" />
+                        </labels>
+                        <control id="tc_riskfactorsdone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_riskfactorsdone" disabled="false" />
+                      </cell>
+                      <cell id="{d030abbc-dd65-4b3a-92d4-b22608e5c607}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Review of Related THA &amp; SWP Completed?" languagecode="1033" />
+                          <label description="Identification et révision des ART &amp; MST connexes" languagecode="1036" />
+                        </labels>
+                        <control id="tc_reviewofrelatedthaswpcompleted" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_reviewofrelatedthaswpcompleted" disabled="false" />
+                      </cell>
+                      <cell id="{f16b502a-e8b4-4de2-80ea-bb045c3cd840}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="The Assessment Plan was Developed in Consultation with WHSC or HSR?" languagecode="1033" />
+                          <label description="Le plan d'évaluation a été élaboré en consultation avec le CLSS ou le RSS?" languagecode="1036" />
+                        </labels>
+                        <control id="tc_developedinconsultationwithwhscorhsr" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_developedinconsultationwithwhscorhsr" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cf1dc8db-11ab-4d56-aa45-47ce8949b0fa}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Main Transportation Used" languagecode="1033" />
+                          <label description="Type de transport principal" languagecode="1036" />
+                        </labels>
+                        <control id="tc_maintransportationused" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_maintransportationused" disabled="false" />
+                      </cell>
+                      <cell id="{0affa7cb-a74c-4fe1-9fc7-7f5b20545e57}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Checking-In Frequency" languagecode="1033" />
+                          <label description="Fréquence de vérification" languagecode="1036" />
+                        </labels>
+                        <control id="tc_checkinginfrequency" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_checkinginfrequency" disabled="false" />
+                      </cell>
+                      <cell id="{ef3f789d-da6f-4131-8675-ddbd2efc4a26}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Means of Communication" languagecode="1033" />
+                          <label description="Moyens de communication" languagecode="1036" />
+                        </labels>
+                        <control id="tc_meansofcommunication" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_meansofcommunication" disabled="false" />
+                      </cell>
+                      <cell id="{2fdd5fba-1287-4c7e-b534-237b527d312b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Alternate Plan in Place for When Employee Does Not Respond?" languagecode="1033" />
+                          <label description="Plan alternatif en place pour l'employé qui ne répond pas?" languagecode="1036" />
+                        </labels>
+                        <control id="tc_alternateplanifemployeedoesnotrespond" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_alternateplanifemployeedoesnotrespond" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aff4c9ab-033b-4f42-99d7-91271e1de781}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Designated Contact Person and Back-Up Identified?" languagecode="1033" />
+                          <label description="Personne contact et remplaçant ont été désignés?" languagecode="1036" />
+                        </labels>
+                        <control id="tc_designatedcontactpersonidentified" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_designatedcontactpersonidentified" disabled="false" />
+                      </cell>
+                      <cell id="{e5f96f27-2d5a-46a2-bc5c-fa51e372221f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Necessary PPE are Listed and Provided?" languagecode="1033" />
+                          <label description="Les EPI nécessaires sont listés et fournis" languagecode="1036" />
+                        </labels>
+                        <control id="tc_necessaryppearelistedandprovided" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_necessaryppearelistedandprovided" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{1959d0db-f1bd-4c3b-b032-958f76f48ad0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell showlabel="false" locklevel="0" id="{63575e6d-b442-4c05-8e11-a183c97114b5}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47320e92-620d-48ae-9dc3-de7ea105fd2d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contact List Created for Local Emergency Services?" languagecode="1033" />
+                          <label description="Liste des services d'urgence locaux créée?" languagecode="1036" />
+                        </labels>
+                        <control id="tc_contactlistforlocalemergencyservices" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_contactlistforlocalemergencyservices" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{f7115c38-6493-4229-a6df-32eaa98bfaa1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{989c6430-f02f-4f7f-a2ef-96a93a8dc9fc}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell showlabel="false" locklevel="0" id="{84befa52-1b3a-40e4-8543-f2f01df17786}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ac0e9ed5-d9cd-409d-bde4-b8ac651309a8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{82504282-b782-4027-a5ab-3abcc55dca34}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{e015827b-1cb7-4fbc-906f-ea592c6dfbba}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{c32aaaa1-f22a-46bc-b341-ac267666afe4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{41759617-3d21-4365-aba5-7cc34057b5bf}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fa42af1b-a79f-496e-a900-32852706ead2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1305c394-f0a0-40ae-922a-b2e1ac6a5de1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0624b3e1-cc4d-44cd-93a5-ae775cdf8662}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2dbb12e7-3bfd-416a-b1bd-fbf8d9cdf087}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+            <cell id="{39fc27bc-f280-46b8-bbb6-4b604cfd2f0a}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{13d479bf-cdd4-44a0-b5a3-a35d787cb803}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f2685d78-edc2-4d41-b0d6-b173e230aa66}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f72e5669-a2f3-482e-bf08-2f0459592cbe}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{de87bfc8-1863-4248-990b-1637786b5b27}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{14a3ef27-3da4-405d-b686-197510a5ccc6}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+            <cell id="{704b149c-ea13-46af-837f-db78c4d6bab5}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ffffd744-675c-4ab9-8a1e-7349506bf64f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tc_id" select="1" icon="1" preview="1">
+        <row name="result" id="tc_assessmentplanid">
+          <cell name="tc_managersfamilyname" width="181" />
+          <cell name="tc_employeespositionnumber" width="207" />
+          <cell name="tc_employeesemail" width="159" />
+          <cell name="tc_region" width="100" />
+          <cell name="tc_provinceorterritory" width="163" />
+          <cell name="tc_workplaceaddress" width="157" />
+          <cell name="tc_workdescriptionduringworkingalone" width="141" />
+          <cell name="tc_workingalonetype" width="154" />
+          <cell name="tc_alonewhenteleworking" width="100" />
+          <cell name="tc_startingdate" width="100" />
+          <cell name="tc_workingalonefrequency" width="190" />
+          <cell name="tc_taskspreventingworkingaloneverified" width="144" />
+          <cell name="tc_maintransportationused" width="207" />
+          <cell name="tc_riskfactorsdone" width="107" />
+          <cell name="tc_reviewofrelatedthaswpcompleted" width="146" />
+          <cell name="tc_developedinconsultationwithwhscorhsr" width="171" />
+          <cell name="tc_designatedcontactpersonidentified" width="160" />
+          <cell name="tc_checkinginfrequency" width="176" />
+          <cell name="tc_meansofcommunication" width="183" />
+          <cell name="tc_alternateplanifemployeedoesnotrespond" width="124" />
+          <cell name="tc_contactlistforlocalemergencyservices" width="114" />
+          <cell name="tc_necessaryppearelistedandprovided" width="129" />
+          <cell name="modifiedon" width="130" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tc_assessmentplan">
+          <attribute name="tc_assessmentplanid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tc_managersfamilyname" />
+          <attribute name="tc_employeespositionnumber" />
+          <attribute name="tc_employeesemail" />
+          <attribute name="tc_region" />
+          <attribute name="tc_provinceorterritory" />
+          <attribute name="tc_workplaceaddress" />
+          <attribute name="tc_workdescriptionduringworkingalone" />
+          <attribute name="tc_workingalonetype" />
+          <attribute name="tc_alonewhenteleworking" />
+          <attribute name="tc_startingdate" />
+          <attribute name="tc_workingalonefrequency" />
+          <attribute name="tc_taskspreventingworkingaloneverified" />
+          <attribute name="tc_maintransportationused" />
+          <attribute name="tc_riskfactorsdone" />
+          <attribute name="tc_reviewofrelatedthaswpcompleted" />
+          <attribute name="tc_developedinconsultationwithwhscorhsr" />
+          <attribute name="tc_designatedcontactpersonidentified" />
+          <attribute name="tc_checkinginfrequency" />
+          <attribute name="tc_meansofcommunication" />
+          <attribute name="tc_alternateplanifemployeedoesnotrespond" />
+          <attribute name="tc_contactlistforlocalemergencyservices" />
+          <attribute name="tc_necessaryppearelistedandprovided" />
+          <attribute name="modifiedon" />
+          <order attribute="modifiedon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Assessment Plans" languagecode="1033" />
+      <LocalizedName description="Plans d'évaluation actifs" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

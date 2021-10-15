@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tc_checkinginfrequencies" localizedName="Checking-In Frequencies" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Checking-In Frequencies" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="100000000">
+      <labels>
+        <label description="Once a day" languagecode="1033" />
+        <label description="Une fois/jour" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000001">
+      <labels>
+        <label description="Twice a day" languagecode="1033" />
+        <label description="Deux fois/jour" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000002">
+      <labels>
+        <label description="More Than Twice" languagecode="1033" />
+        <label description="Plus que 2 fois/jour" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="100000003">
+      <labels>
+        <label description="N/A" languagecode="1033" />
+        <label description="N/A" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>
