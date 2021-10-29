@@ -610,7 +610,7 @@
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_AloneWhenTeleworking">
-          <Type>bit</Type>
+          <Type>picklist</Type>
           <Name>tc_alonewhenteleworking</Name>
           <LogicalName>tc_alonewhenteleworking</LogicalName>
           <RequiredLevel>required</RequiredLevel>
@@ -622,7 +622,7 @@
           <IsCustomField>1</IsCustomField>
           <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IntroducedVersion>1.5.0.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
           <IsRenameable>1</IsRenameable>
           <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -639,35 +639,10 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="tc_tc_assessmentplan_alonewhenteleworking">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>tc_yesnonachoices</OptionSetName>
           <displaynames>
             <displayname description="Alone When Teleworking" languagecode="1033" />
-            <displayname description="Seul au télétravail" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -1254,7 +1229,7 @@
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_NecessaryPPEareListedandProvided">
-          <Type>bit</Type>
+          <Type>picklist</Type>
           <Name>tc_necessaryppearelistedandprovided</Name>
           <LogicalName>tc_necessaryppearelistedandprovided</LogicalName>
           <RequiredLevel>required</RequiredLevel>
@@ -1266,7 +1241,7 @@
           <IsCustomField>1</IsCustomField>
           <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IntroducedVersion>1.5.0.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
           <IsRenameable>1</IsRenameable>
           <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -1283,35 +1258,10 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="tc_tc_assessmentplan_necessaryppearelistedandprovided">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>tc_yesnonachoices</OptionSetName>
           <displaynames>
             <displayname description="Necessary PPE are Listed and Provided?" languagecode="1033" />
-            <displayname description="Les EPI nécessaires sont listés et fournis" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -1398,7 +1348,7 @@
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_ReviewofRelatedTHASWPCompleted">
-          <Type>bit</Type>
+          <Type>picklist</Type>
           <Name>tc_reviewofrelatedthaswpcompleted</Name>
           <LogicalName>tc_reviewofrelatedthaswpcompleted</LogicalName>
           <RequiredLevel>required</RequiredLevel>
@@ -1410,7 +1360,7 @@
           <IsCustomField>1</IsCustomField>
           <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IntroducedVersion>1.5.0.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
           <IsRenameable>1</IsRenameable>
           <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -1427,35 +1377,10 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="tc_tc_assessmentplan_reviewofrelatedthaswpcompleted">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>tc_yesnonachoices</OptionSetName>
           <displaynames>
             <displayname description="Review of Related THA &amp; SWP Completed?" languagecode="1033" />
-            <displayname description="Identification et révision des ART &amp; MST connexes" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />

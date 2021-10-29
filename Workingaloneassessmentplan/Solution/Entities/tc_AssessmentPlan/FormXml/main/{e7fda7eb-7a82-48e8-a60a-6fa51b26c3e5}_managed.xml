@@ -111,12 +111,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b6ad9c27-91ca-4a3e-b09e-d710c4e78707}" locklevel="0" colspan="1" rowspan="1">
+                      <cell id="{4b4d48a0-deb9-464f-8f39-8025aa08c17f}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="Alone When Teleworking" languagecode="1033" />
-                          <label description="Seul au télétravail" languagecode="1036" />
                         </labels>
-                        <control id="tc_alonewhenteleworking" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_alonewhenteleworking" disabled="false" />
+                        <control id="tc_alonewhenteleworking" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_alonewhenteleworking" disabled="false" />
                       </cell>
                       <cell id="{04c566b9-37a7-4f23-9f0c-1c7cf0fd1426}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
@@ -125,12 +124,11 @@
                         </labels>
                         <control id="tc_riskfactorsdone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_riskfactorsdone" disabled="false" />
                       </cell>
-                      <cell id="{d030abbc-dd65-4b3a-92d4-b22608e5c607}" locklevel="0" colspan="1" rowspan="1">
+                      <cell id="{31071c90-55fa-4904-9cd2-cfeee10fd4e5}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="Review of Related THA &amp; SWP Completed?" languagecode="1033" />
-                          <label description="Identification et révision des ART &amp; MST connexes" languagecode="1036" />
                         </labels>
-                        <control id="tc_reviewofrelatedthaswpcompleted" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_reviewofrelatedthaswpcompleted" disabled="false" />
+                        <control id="tc_reviewofrelatedthaswpcompleted" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_reviewofrelatedthaswpcompleted" disabled="false" />
                       </cell>
                       <cell id="{f16b502a-e8b4-4de2-80ea-bb045c3cd840}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
@@ -178,14 +176,13 @@
                         </labels>
                         <control id="tc_designatedcontactpersonidentified" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_designatedcontactpersonidentified" disabled="false" />
                       </cell>
-                      <cell id="{e5f96f27-2d5a-46a2-bc5c-fa51e372221f}" locklevel="0" colspan="1" rowspan="1">
+                      <cell id="{16b9045d-646b-41e4-b6a1-ba5e5ca21989}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="Necessary PPE are Listed and Provided?" languagecode="1033" />
-                          <label description="Les EPI nécessaires sont listés et fournis" languagecode="1036" />
                         </labels>
-                        <control id="tc_necessaryppearelistedandprovided" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_necessaryppearelistedandprovided" disabled="false" />
+                        <control id="tc_necessaryppearelistedandprovided" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tc_necessaryppearelistedandprovided" disabled="false" />
                       </cell>
-                      <cell locklevel="0" id="{1959d0db-f1bd-4c3b-b032-958f76f48ad0}">
+                      <cell locklevel="0" id="{989c6430-f02f-4f7f-a2ef-96a93a8dc9fc}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -204,28 +201,6 @@
                         </labels>
                         <control id="tc_contactlistforlocalemergencyservices" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tc_contactlistforlocalemergencyservices" disabled="false" />
                       </cell>
-                      <cell locklevel="0" id="{f7115c38-6493-4229-a6df-32eaa98bfaa1}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell locklevel="0" id="{989c6430-f02f-4f7f-a2ef-96a93a8dc9fc}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell showlabel="false" locklevel="0" id="{84befa52-1b3a-40e4-8543-f2f01df17786}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell locklevel="0" id="{ac0e9ed5-d9cd-409d-bde4-b8ac651309a8}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                       <cell locklevel="0" id="{82504282-b782-4027-a5ab-3abcc55dca34}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -236,7 +211,7 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell locklevel="0" id="{c32aaaa1-f22a-46bc-b341-ac267666afe4}">
+                      <cell showlabel="false" locklevel="0" id="{84befa52-1b3a-40e4-8543-f2f01df17786}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>

@@ -16,22 +16,22 @@
           <cell name="tc_region" width="100" />
           <cell name="tc_provinceorterritory" width="163" />
           <cell name="tc_workplaceaddress" width="157" />
-          <cell name="tc_workdescriptionduringworkingalone" width="141" />
+          <cell name="tc_workdescriptionduringworkingalone" width="293" />
           <cell name="tc_workingalonetype" width="154" />
-          <cell name="tc_alonewhenteleworking" width="100" />
-          <cell name="tc_startingdate" width="100" />
+          <cell name="tc_alonewhenteleworking" width="181" />
+          <cell name="tc_startingdate" width="135" />
           <cell name="tc_workingalonefrequency" width="190" />
           <cell name="tc_taskspreventingworkingaloneverified" width="144" />
           <cell name="tc_maintransportationused" width="207" />
           <cell name="tc_riskfactorsdone" width="107" />
-          <cell name="tc_reviewofrelatedthaswpcompleted" width="146" />
+          <cell name="tc_reviewofrelatedthaswpcompleted" width="126" />
           <cell name="tc_developedinconsultationwithwhscorhsr" width="171" />
           <cell name="tc_designatedcontactpersonidentified" width="160" />
           <cell name="tc_checkinginfrequency" width="176" />
           <cell name="tc_meansofcommunication" width="183" />
           <cell name="tc_alternateplanifemployeedoesnotrespond" width="124" />
           <cell name="tc_contactlistforlocalemergencyservices" width="114" />
-          <cell name="tc_necessaryppearelistedandprovided" width="129" />
+          <cell name="tc_necessaryppearelistedandprovided" width="127" />
           <cell name="modifiedon" width="130" />
         </row>
       </grid>
@@ -52,22 +52,22 @@
           <attribute name="tc_workplaceaddress" />
           <attribute name="tc_workdescriptionduringworkingalone" />
           <attribute name="tc_workingalonetype" />
-          <attribute name="tc_alonewhenteleworking" />
           <attribute name="tc_startingdate" />
           <attribute name="tc_workingalonefrequency" />
           <attribute name="tc_taskspreventingworkingaloneverified" />
           <attribute name="tc_maintransportationused" />
           <attribute name="tc_riskfactorsdone" />
-          <attribute name="tc_reviewofrelatedthaswpcompleted" />
           <attribute name="tc_developedinconsultationwithwhscorhsr" />
           <attribute name="tc_designatedcontactpersonidentified" />
           <attribute name="tc_checkinginfrequency" />
           <attribute name="tc_meansofcommunication" />
           <attribute name="tc_alternateplanifemployeedoesnotrespond" />
           <attribute name="tc_contactlistforlocalemergencyservices" />
-          <attribute name="tc_necessaryppearelistedandprovided" />
           <attribute name="modifiedon" />
           <order attribute="modifiedon" descending="true" />
+          <attribute name="tc_alonewhenteleworking" />
+          <attribute name="tc_reviewofrelatedthaswpcompleted" />
+          <attribute name="tc_necessaryppearelistedandprovided" />
         </entity>
       </fetch>
     </fetchxml>
