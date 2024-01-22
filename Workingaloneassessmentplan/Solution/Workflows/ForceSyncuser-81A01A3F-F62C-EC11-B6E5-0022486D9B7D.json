@@ -1,1 +1,212 @@
-{"properties":{"connectionReferences":{"shared_powerplatformforadmins_1":{"runtimeSource":"embedded","connection":{},"api":{"name":"shared_powerplatformforadmins"}},"shared_commondataserviceforapps":{"runtimeSource":"embedded","connection":{},"api":{"name":"shared_commondataserviceforapps"}},"shared_office365groups":{"runtimeSource":"embedded","connection":{},"api":{"name":"shared_office365groups"}}},"definition":{"$schema":"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#","contentVersion":"1.0.0.0","parameters":{"$connections":{"defaultValue":{},"type":"Object"},"$authentication":{"defaultValue":{},"type":"SecureObject"}},"triggers":{"When_a_group_member_is_added_or_removed":{"recurrence":{"interval":1,"frequency":"Minute"},"splitOn":"@triggerOutputs()?['body']","type":"OpenApiConnection","inputs":{"host":{"connectionName":"shared_office365groups","operationId":"OnGroupMembershipChange","apiId":"/providers/Microsoft.PowerApps/apis/shared_office365groups"},"parameters":{"groupId":"ab0f071d-310f-4ea4-9451-86bcc4a88ea1"},"authentication":"@parameters('$authentication')"}}},"actions":{"Force_Sync_user":{"runAfter":{"PPEnvironment__-__if_no_Current,_set_to_null":["Succeeded"]},"type":"OpenApiConnection","inputs":{"host":{"connectionName":"shared_powerplatformforadmins_1","operationId":"Add-AdminPowerAppsSyncUser","apiId":"/providers/Microsoft.PowerApps/apis/shared_powerplatformforadmins"},"parameters":{"environment":"@variables('PPEnvironment')","body/ObjectId":"@triggerOutputs()?['body/id']","api-version":"2019-05-01"},"authentication":"@parameters('$authentication')"}},"Initialize_PPEnvironment":{"runAfter":{},"type":"InitializeVariable","inputs":{"variables":[{"name":"PPEnvironment","type":"string","value":"@{null}"}]}},"ListDefns-AppUrlEnvironmentVariable":{"runAfter":{"Initialize_PPEnvironment":["Succeeded"]},"type":"OpenApiConnection","inputs":{"host":{"connectionName":"shared_commondataserviceforapps","operationId":"ListRecords","apiId":"/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"},"parameters":{"entityName":"environmentvariabledefinitions","$filter":"schemaname eq 'tc_PowerPlatformEnvironment'"},"authentication":"@parameters('$authentication')"}},"GetDefnId-AppUrlEnvironmentVariable":{"runAfter":{"ListDefns-AppUrlEnvironmentVariable":["Succeeded"]},"type":"Compose","inputs":"@first(body('ListDefns-AppUrlEnvironmentVariable')?['value'])?['environmentvariabledefinitionid']"},"ListCurrents-AppUrlEnvironmentVariable":{"runAfter":{"GetDefnId-AppUrlEnvironmentVariable":["Succeeded"]},"type":"OpenApiConnection","inputs":{"host":{"connectionName":"shared_commondataserviceforapps","operationId":"ListRecords","apiId":"/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"},"parameters":{"entityName":"environmentvariablevalues","$filter":"_environmentvariabledefinitionid_value eq @{outputs('GetDefnId-AppUrlEnvironmentVariable')}"},"authentication":"@parameters('$authentication')"}},"PPEnvironment__-__if_no_Current,_set_to_null":{"actions":{"Set_AppUrl_-_Current_Value":{"runAfter":{},"type":"SetVariable","inputs":{"name":"PPEnvironment","value":"@first(body('ListCurrents-AppUrlEnvironmentVariable')?['value'])?['Value']"}}},"runAfter":{"ListCurrents-AppUrlEnvironmentVariable":["Succeeded"]},"else":{"actions":{"Set_AppUrl_-_null":{"runAfter":{},"type":"SetVariable","inputs":{"name":"PPEnvironment","value":"@{null}"}}}},"expression":{"greaterOrEquals":["@length(body('ListCurrents-AppUrlEnvironmentVariable')?['value'])",1]},"type":"If"}}}},"schemaVersion":"1.0.0.0"}
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_powerplatformforadmins_1": {
+        "runtimeSource": "embedded",
+        "connection": {},
+        "api": {
+          "name": "shared_powerplatformforadmins"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {},
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365groups": {
+        "runtimeSource": "embedded",
+        "connection": {},
+        "api": {
+          "name": "shared_office365groups"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_group_member_is_added_or_removed": {
+          "recurrence": {
+            "interval": 1,
+            "frequency": "Minute"
+          },
+          "splitOn": "@triggerOutputs()?['body']",
+          "metadata": {
+            "operationMetadataId": "ae67458c-7f71-4d8b-a84c-e8fff53d6109"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365groups",
+              "operationId": "OnGroupMembershipChange",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365groups"
+            },
+            "parameters": {
+              "groupId": "ab0f071d-310f-4ea4-9451-86bcc4a88ea1"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Force_Sync_user": {
+          "runAfter": {
+            "PPEnvironment__-__if_no_Current,_set_to_null": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3bb2ddeb-816d-4e08-9c76-2d627c7d0ad4"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_powerplatformforadmins_1",
+              "operationId": "Add-AdminPowerAppsSyncUser",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_powerplatformforadmins"
+            },
+            "parameters": {
+              "environment": "@variables('PPEnvironment')",
+              "body/ObjectId": "@triggerOutputs()?['body/id']",
+              "api-version": "2019-05-01"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Initialize_PPEnvironment": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "a65afa6d-3435-49ec-9ad8-08c75d9110ec"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "PPEnvironment",
+                "type": "string",
+                "value": "@{null}"
+              }
+            ]
+          }
+        },
+        "ListDefns-AppUrlEnvironmentVariable": {
+          "runAfter": {
+            "Initialize_PPEnvironment": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2f957404-9f36-4fce-b3f3-c3ee119aaaf0"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "environmentvariabledefinitions",
+              "$filter": "schemaname eq 'tc_PowerPlatformEnvironment'"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "GetDefnId-AppUrlEnvironmentVariable": {
+          "runAfter": {
+            "ListDefns-AppUrlEnvironmentVariable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b9b2d179-c18a-4f27-afbc-a17538dfea8a"
+          },
+          "type": "Compose",
+          "inputs": "@first(body('ListDefns-AppUrlEnvironmentVariable')?['value'])?['environmentvariabledefinitionid']"
+        },
+        "ListCurrents-AppUrlEnvironmentVariable": {
+          "runAfter": {
+            "GetDefnId-AppUrlEnvironmentVariable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9c257122-d3bf-4aa1-8103-df9abe7d3fcc"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "environmentvariablevalues",
+              "$filter": "_environmentvariabledefinitionid_value eq @{outputs('GetDefnId-AppUrlEnvironmentVariable')}"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "PPEnvironment__-__if_no_Current,_set_to_null": {
+          "actions": {
+            "Set_AppUrl_-_Current_Value": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "d38ea58c-f5d3-4632-98cf-4c5184fe916c"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "PPEnvironment",
+                "value": "@first(body('ListCurrents-AppUrlEnvironmentVariable')?['value'])?['Value']"
+              }
+            }
+          },
+          "runAfter": {
+            "ListCurrents-AppUrlEnvironmentVariable": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Set_AppUrl_-_null": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "6ecbfecf-f21b-49a9-a362-68a5dedeee05"
+                },
+                "type": "SetVariable",
+                "inputs": {
+                  "name": "PPEnvironment",
+                  "value": "@{null}"
+                }
+              }
+            }
+          },
+          "expression": {
+            "greaterOrEquals": [
+              "@length(body('ListCurrents-AppUrlEnvironmentVariable')?['value'])",
+              1
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ca561ab8-49a1-4c02-84e8-dacd7ed5aa48"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

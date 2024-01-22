@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21102.128" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24012.190" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>Workingaloneassessmentplan</UniqueName>
     <LocalizedNames>
@@ -7,7 +7,7 @@
       <LocalizedName description="Plan d'évaluation du travail seul" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.6.0.0</Version>
+    <Version>1.7.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>TransportCanada</UniqueName>
@@ -80,6 +80,11 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="tc_assessmentplan" behavior="0" />
+      <RootComponent type="20" id="{4ca0c37f-f22c-ec11-b6e5-0022486d9b7d}" behavior="0" />
+      <RootComponent type="20" id="{72c1d42a-f22c-ec11-b6e5-0022486d9b7d}" behavior="0" />
+      <RootComponent type="29" id="{81a01a3f-f62c-ec11-b6e5-0022486d9b7d}" behavior="0" />
+      <RootComponent type="62" schemaName="tc_WorkingAloneAssessmentPlan" behavior="0" />
+      <RootComponent type="80" schemaName="tc_WorkingAloneAssessmentPlan" behavior="0" />
       <RootComponent type="9" schemaName="tc_checkinginfrequencies" behavior="0" />
       <RootComponent type="9" schemaName="tc_maintransportationsused" behavior="0" />
       <RootComponent type="9" schemaName="tc_meansofcommunications" behavior="0" />
@@ -88,19 +93,14 @@
       <RootComponent type="9" schemaName="tc_workingalonefrequencies" behavior="0" />
       <RootComponent type="9" schemaName="tc_workingalonetypes" behavior="0" />
       <RootComponent type="9" schemaName="tc_yesnonachoices" behavior="0" />
-      <RootComponent type="20" id="{4ca0c37f-f22c-ec11-b6e5-0022486d9b7d}" behavior="0" />
-      <RootComponent type="20" id="{72c1d42a-f22c-ec11-b6e5-0022486d9b7d}" behavior="0" />
-      <RootComponent type="29" id="{81a01a3f-f62c-ec11-b6e5-0022486d9b7d}" behavior="0" />
-      <RootComponent type="62" schemaName="tc_WorkingAloneAssessmentPlan" behavior="0" />
-      <RootComponent type="80" schemaName="tc_WorkingAloneAssessmentPlan" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="environmentvariabledefinition" displayName="Environment Variable Definition" solution="EnvironmentVariables (1.0.2.111)" />
+        <Required type="1" schemaName="environmentvariabledefinition" displayName="Environment Variable Definition" solution="EnvironmentVariables (1.0.2.293)" />
         <Dependent type="29" displayName="Force Sync user" id="{81a01a3f-f62c-ec11-b6e5-0022486d9b7d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="environmentvariablevalue" displayName="Environment Variable Value" solution="EnvironmentVariables (1.0.2.111)" />
+        <Required type="1" schemaName="environmentvariablevalue" displayName="Environment Variable Value" solution="EnvironmentVariables (1.0.2.293)" />
         <Dependent type="29" displayName="Force Sync user" id="{81a01a3f-f62c-ec11-b6e5-0022486d9b7d}" />
       </MissingDependency>
       <MissingDependency>
