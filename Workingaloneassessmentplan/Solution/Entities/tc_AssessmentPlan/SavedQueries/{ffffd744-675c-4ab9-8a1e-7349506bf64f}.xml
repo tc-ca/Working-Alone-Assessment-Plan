@@ -13,7 +13,6 @@
           <cell name="tc_managersfamilyname" width="181" />
           <cell name="tc_employeespositionnumber" width="207" />
           <cell name="tc_employeesemail" width="159" />
-          <cell name="modifiedon" width="148" />
           <cell name="tc_region" width="100" />
           <cell name="tc_provinceorterritory" width="163" />
           <cell name="tc_workplaceaddress" width="157" />
@@ -66,7 +65,6 @@
           <attribute name="tc_alonewhenteleworking" />
           <attribute name="tc_reviewofrelatedthaswpcompleted" />
           <attribute name="tc_necessaryppearelistedandprovided" />
-          <attribute name="modifiedon" />
         </entity>
       </fetch>
     </fetchxml>

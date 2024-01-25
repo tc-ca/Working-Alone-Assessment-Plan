@@ -7,7 +7,7 @@
       <LocalizedName description="Plan d'évaluation du travail seul" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.7.0.0</Version>
+    <Version>1.8.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>TransportCanada</UniqueName>
@@ -106,6 +106,12 @@
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="tc_WorkingAloneAssessmentPlan" displayName="Working Alone Assessment Plan  " />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" displayName="msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" solution="msdynce_KnowledgeManagementFeatures (9.0.24011.5006)">
+          <package>msdynce_KnowledgeManagementAnchor (9.0.24011.5006)</package>
+        </Required>
+        <Dependent type="62" schemaName="tc_WorkingAloneAssessmentPlan" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

@@ -19,7 +19,7 @@
             <Title LCID="1033" Title="Subarea1" />
           </Titles>
         </SubArea>
-        <SubArea Id="NewSubarea_85c26a39" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tc_assessmentplan" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubarea_85c26a39" VectorIcon="/WebResources/msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" Icon="/WebResources/msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" Entity="tc_assessmentplan" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
       </Group>
     </Area>
   </SiteMap>
