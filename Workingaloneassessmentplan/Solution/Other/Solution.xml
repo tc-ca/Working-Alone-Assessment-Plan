@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24012.190" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24013.164" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>Workingaloneassessmentplan</UniqueName>
     <LocalizedNames>
@@ -7,7 +7,7 @@
       <LocalizedName description="Plan d'évaluation du travail seul" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.8.0.0</Version>
+    <Version>1.9.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>TransportCanada</UniqueName>
@@ -108,8 +108,8 @@
         <Dependent type="80" schemaName="tc_WorkingAloneAssessmentPlan" displayName="Working Alone Assessment Plan  " />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" displayName="msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" solution="msdynce_KnowledgeManagementFeatures (9.0.24011.5006)">
-          <package>msdynce_KnowledgeManagementAnchor (9.0.24011.5006)</package>
+        <Required type="61" schemaName="msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" displayName="msdyncrm_/KbMultisession/msdyn_kbsearchcontroltabicon.svg" solution="msdynce_KnowledgeManagementFeatures (9.0.24011.5007)">
+          <package>msdynce_KnowledgeManagementAnchor (9.0.24011.5007)</package>
         </Required>
         <Dependent type="62" schemaName="tc_WorkingAloneAssessmentPlan" />
       </MissingDependency>
